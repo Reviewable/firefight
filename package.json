@@ -1,0 +1,17 @@
+{
+  "name": "firefight",
+  "version": "1.0.0",
+  "main": "Some utility functions to help with debugging Firebase issues in NodeJS",
+  "repository": "git@github.com:pkaminski/firefight.git",
+  "author": "Piotr Kaminski <piotr@ideanest.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.6.1"
+  },
+  "dependencies": {
+    "firebase": "2.x"
+  },
+  "peerDependencies": {
+    "firebase-admin": "5.x || 6.x"
+  }
+}
