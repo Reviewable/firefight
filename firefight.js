@@ -115,7 +115,7 @@ exports.Simulator = class Simulator {
         const trace = await this._simulateCall(simulatedRef, call);
         if (trace) traces.push(trace);
       }
-      if (!traces.lenth) return 'Unable to reproduce error in simulation';
+      if (!traces.length) return 'Unable to reproduce error in simulation';
       return traces.join('\n\n');
     } catch (e) {
       return `Error running simulation: ${e}`;
