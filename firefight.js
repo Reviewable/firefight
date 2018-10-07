@@ -13,31 +13,31 @@ class SimulatorProxy {
   }
 
   async on(ref) {
-    return this._simulator.simulate(this._token, ref, [{method: 'once', args: ['value']}]);
+    return this._simulator._simulate(this._token, ref, [{method: 'once', args: ['value']}]);
   }
 
   async once(ref) {
-    return this._simulator.simulate(this._token, ref, [{method: 'once', args: ['value']}]);
+    return this._simulator._simulate(this._token, ref, [{method: 'once', args: ['value']}]);
   }
 
   async set(ref, value) {
-    return this._simulator.simulate(this._token, ref, [{method: 'set', args: [value]}]);
+    return this._simulator._simulate(this._token, ref, [{method: 'set', args: [value]}]);
   }
 
   async update(ref, value) {
-    return this._simulator.simulate(this._token, ref, [{method: 'update', args: [value]}]);
+    return this._simulator._simulate(this._token, ref, [{method: 'update', args: [value]}]);
   }
 
   async remove(ref) {
-    return this._simulator.simulate(this._token, ref, [{method: 'remove'}]);
+    return this._simulator._simulate(this._token, ref, [{method: 'remove'}]);
   }
 
   async push(ref, value) {
-    return this._simulator.simulate(this._token, ref, [{method: 'push', args: [value]}]);
+    return this._simulator._simulate(this._token, ref, [{method: 'push', args: [value]}]);
   }
 
   async transaction(ref, value) {
-    return this._simulator.simulate(
+    return this._simulator._simulate(
       this._token, ref, [{method: 'once', args: ['value']}, {method: 'set', args: [value]}]);
   }
 }
