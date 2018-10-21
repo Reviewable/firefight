@@ -94,8 +94,9 @@ exports.Simulator = class Simulator {
     if (!ref.toString().startsWith(this._databaseUrl)) {
       throw new Error(`Ref not in database ${this._simulatedFirebase}: ${ref}`);
     }
-    const simulatedRef =
-      this._simulatedFirebase.child(ref.toString().slice(this._databaseUrl.length));
+    const path = ref.toString().slice(this._databaseUrl.length);
+    let simulatedRef = this._simulatedFirebase;
+    if (path) simulatedRef = simulatedRef.child(path);
     // Intercept the console as late as possible, so that we can add our filter at the top and elide
     // permission traces before anybody else tries to process them.
     interceptConsoleLog();
