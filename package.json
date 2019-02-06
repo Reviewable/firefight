@@ -1,6 +1,6 @@
 {
   "name": "firefight",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "Some utility functions to help with debugging Firebase issues in NodeJS",
   "repository": "git@github.com:pkaminski/firefight.git",
   "author": "Piotr Kaminski <piotr@ideanest.com>",
@@ -13,6 +13,6 @@
     "firebase-token-generator": "^2.0.0"
   },
   "peerDependencies": {
-    "firebase-admin": "5.x || 6.x"
+    "firebase-admin": "5.x || 6.x || 7.x"
   }
 }
