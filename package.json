@@ -1,18 +1,22 @@
 {
   "name": "firefight",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "Some utility functions to help with debugging Firebase issues in NodeJS",
   "repository": "git@github.com:pkaminski/firefight.git",
   "author": "Piotr Kaminski <piotr@ideanest.com>",
   "license": "MIT",
+  "scripts": {
+    "lint": "eslint firefight.js",
+    "update": "yarn upgrade-interactive --latest"
+  },
   "devDependencies": {
-    "eslint": "7.x"
+    "eslint": "8.56.0"
   },
   "dependencies": {
     "firebase": "2.x",
     "firebase-token-generator": "^2.0.0"
   },
   "peerDependencies": {
-    "firebase-admin": "5.x || 6.x || 7.x || 8.x || 9.x"
+    "firebase-admin": "5.x || 6.x || 7.x || 8.x || 9.x || 10.x || 11.x || 12.x"
   }
 }
