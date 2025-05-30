@@ -9,6 +9,7 @@
     "lint": "eslint firefight.js",
     "update": "yarn upgrade-interactive --latest"
   },
+  "packageManager": "yarn@1.22.22",
   "devDependencies": {
     "eslint": "8.56.0"
   },
