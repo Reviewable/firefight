@@ -1,9 +1,9 @@
 {
   "name": "firefight",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Some utility functions to help with debugging Firebase issues in NodeJS",
-  "repository": "git@github.com:pkaminski/firefight.git",
-  "author": "Piotr Kaminski <piotr@ideanest.com>",
+  "repository": "https://github.com/Reviewable/firefight",
+  "author": "Piotr Kaminski <piotr@reviewable.io>",
   "license": "MIT",
   "scripts": {
     "lint": "eslint firefight.js",
