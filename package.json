@@ -7,11 +7,13 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint firefight.js",
-    "update": "yarn upgrade-interactive --latest"
+    "update": "yarn up -R '*' && yarn dedupe --strategy highest",
+    "latest": "yarn npm-check-updates -i -m --packageManager yarn --install never && yarn install"
   },
-  "packageManager": "yarn@1.22.22",
+  "packageManager": "yarn@4.13.0",
   "devDependencies": {
-    "eslint": "8.56.0"
+    "eslint": "8.56.0",
+    "npm-check-updates": "^20.0.0"
   },
   "dependencies": {
     "firebase": "2.x",
