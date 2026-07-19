@@ -1,19 +1,22 @@
 {
   "name": "firefight",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Some utility functions to help with debugging Firebase issues in NodeJS",
   "repository": "https://github.com/Reviewable/firefight",
   "author": "Piotr Kaminski <piotr@reviewable.io>",
   "license": "MIT",
   "scripts": {
     "lint": "eslint firefight.js",
+    "upgrade": "reviewable-upgrade",
     "update": "yarn up -R '*' && yarn dedupe --strategy highest",
     "latest": "yarn npm-check-updates -i -m --packageManager yarn --install never && yarn install"
   },
   "packageManager": "yarn@4.13.0",
   "devDependencies": {
-    "eslint": "8.56.0",
-    "npm-check-updates": "^20.0.0"
+    "eslint": "^10.7.0",
+    "globals": "^17.7.0",
+    "npm-check-updates": "^22.2.9",
+    "reviewable-configs": "Reviewable/reviewable-configs#master"
   },
   "dependencies": {
     "firebase": "2.x",
