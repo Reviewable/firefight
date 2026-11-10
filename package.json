@@ -11,7 +11,7 @@
     "update": "yarn up -R '*' && yarn dedupe --strategy highest",
     "latest": "yarn npm-check-updates -i -m --packageManager yarn --install never && yarn install"
   },
-  "packageManager": "yarn@4.13.0",
+  "packageManager": "yarn@4.18.1",
   "devDependencies": {
     "eslint": "^10.7.0",
     "globals": "^17.7.0",
